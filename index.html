@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	  <title>Arduino Control Panel</title>
+		<link rel="stylesheet" href="/css/style.css">
+		<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/base/jquery-ui.css" type="text/css" rel="Stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/js/arduino-client.js"></script>
+	</head>
+	<body>
+	  <header>
+		<h1>Arduino Control Panel</h1>
+	  </header>
+	  <div class="content">
+		<div class="left-panel">
+		  <img src="/images/arduino.png" usemap="#m_arduino" name="arduino" width="100%">
+		</div>
+		<div class="right-panel">
+		  <pre id="msgbox"></pre>
+		</div>
+	  </div>
+	  <map name="m_arduino" id="m_arduino">
+		<area shape="rect" coords="745,533,756,545" title="Pin A5" alt="Pin A5" id="PinA5" class="pin">
+		<area shape="rect" coords="718,533,729,545" title="Pin A4" alt="Pin A4" id="PinA4" class="pin">
+		<area shape="rect" coords="691,533,702,545" title="Pin A3" alt="Pin A3" id="PinA3" class="pin">
+		<area shape="rect" coords="663,533,674,545" title="Pin A2" alt="Pin A2" id="PinA2" class="pin">
+		<area shape="rect" coords="637,533,648,545" title="Pin A1" alt="Pin A1" id="PinA1" class="pin">
+		<area shape="rect" coords="610,533,621,545" title="Pin A0" alt="Pin A0" id="PinA0" class="pin">
+		<area shape="rect" coords="745,20,756,32" title="Pin 0" alt="Pin 0" id="Pin0" class="pin">
+		<area shape="rect" coords="718,20,729,32" title="Pin 1" alt="Pin 1" id="Pin1" class="pin">
+		<area shape="rect" coords="691,20,702,32" title="Pin 2" alt="Pin 2" id="Pin2" class="pin">
+		<area shape="rect" coords="663,20,674,32" title="Pin 3" alt="Pin 3" id="Pin3" class="pin">
+		<area shape="rect" coords="636,20,647,32" title="Pin 4" alt="Pin 4" id="Pin4" class="pin">
+		<area shape="rect" coords="610,20,621,32" title="Pin 5" alt="Pin 5" id="Pin5" class="pin">
+		<area shape="rect" coords="582,20,593,32" title="Pin 6" alt="Pin 6" id="Pin6" class="pin">
+		<area shape="rect" coords="556,20,567,32" title="Pin 7" alt="Pin 7" id="Pin7" class="pin">
+		<area shape="rect" coords="501,20,512,32" title="Pin 8" alt="Pin 8" id="Pin8" class="pin">
+		<area shape="rect" coords="475,20,486,32" title="Pin 9" alt="Pin 9" id="Pin9" class="pin">
+		<area shape="rect" coords="448,20,459,32" title="Pin 10" alt="Pin 10" id="Pin10" class="pin">
+		<area shape="rect" coords="421,20,432,32" title="Pin 11" alt="Pin 11" id="Pin11" class="pin">
+		<area shape="rect" coords="394,20,405,32" title="Pin 12" alt="Pin 12" id="Pin12" class="pin">
+		<area shape="rect" coords="366,20,377,32" title="Pin 13" alt="Pin 13" id="Pin13" class="pin">
+	  </map>
+	</body>
+  </html>
